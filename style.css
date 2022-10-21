@@ -1,0 +1,65 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.resimSL{
+    height: 600px;
+    
+}
+.containerr{
+    margin-top: 50px;
+}
+.hakkimizda{
+    background-color: #d3cfcf;
+}
+.ayrac{
+    border:none;
+    border-top: 4px solid #343a40;
+    max-width: 250px;
+    margin: 25px auto;
+}
+.beyaz{
+    font-size: 40px;
+    position: relative;
+    top: -58px;
+    background-color: white ;
+    border: 10px solid white;
+}
+
+.gri{
+    font-size: 40px;
+    position: relative;
+    top: -58px;
+    background-color: #d3cfcf;
+    border: 10px solid #d3cfcf;
+}
+.crewCard>img{
+    transition: 0.5s;
+}
+.crewCard>img:hover{
+    opacity: 0.8;
+
+
+}
+.galery{
+    background-color: #d3cfcf;
+}
+.figure{
+    transition: .5s;
+}
+.figure:hover{
+    opacity: 0.8;
+}
+.footer{
+    height: 40px;
+}
+.car{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    
+}
+.xv{
+    width:auto;
+    height: 200px;
+}

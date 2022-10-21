@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Roboto:ital,wght@1,300&family=Teko:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER MENU START-->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top $yellow-400"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">RENT A CAR | Freedom is Life</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cars">Our Garage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Galery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactus">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                My Account
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Log In </a></li>
+                <li><a class="dropdown-item" href="#">My Watch List</a></li>
+                <li><a class="dropdown-item" href="#">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HEADER MENU END-->
+
+    <!-- SLIDER START-->
+    <div id="carouselExampleCaptions" class="carousel slide containerr" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/s1.jpg" class="d-block w-100 resimSL" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Car Rental Rate Comparison From Multiple Sites At One Time</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/s2.jpg" class="d-block w-100 resimSL" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Car Rental Rate Comparison From Multiple Sites At One Time</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/s3.jpg" class="d-block w-100 resimSL" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Car Rental Rate Comparison From Multiple Sites At One Time</h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- SLIDER END-->
+    <!-- rent a car section start-->
+    <form class="row gy-4 gx-1 align-items-center car">
+      <div class="col-auto">
+        <label class="visually-hidden" for="autoSizingInput">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="autoSizingInput"
+          placeholder="Where you will get"
+        />
+      </div>
+      <div class="col-auto">
+        <label class="visually-hidden" for="autoSizingInputGroup"
+          >Username</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="autoSizingInputGroup"
+          placeholder="Where you will leave"
+        />
+      </div>
+
+      <div class="col-auto">
+        <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+        <select class="form-select" id="autoSizingSelect">
+          <option selected>Select a Car</option>
+          <option value="1">BMW 3.20</option>
+          <option value="2">Mercedes C200d</option>
+          <option value="3">Toyota Corolla</option>
+          <option value="1">BMW 3.20</option>
+          <option value="2">Mercedes C200d</option>
+          <option value="3">Toyota Corolla</option>
+          <option value="1">BMW 3.20</option>
+          <option value="2">Mercedes C200d</option>
+          <option value="3">Toyota Corolla</option>
+        </select>
+      </div>
+      <div class="col-auto" >
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="autoSizingCheck"
+          />
+          <label class="form-check-label" for="autoSizingCheck">
+            Remember me
+          </label>
+        </div>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Search</button>
+      </div>
+    </form>
+    <!-- rent a car section end-->
+
+    <!-- About Us start-->
+
+    <section class="p-5 text-center hakkimizda" id="aboutus">
+      <div class="container">
+        <h2>About Us</h2>
+        <hr class="ayrac" />
+        <i class="fa-solid fa-leaf gri"></i>
+
+        <p>
+          With over eleven thousand miles of stunning coastline, the United
+          Kingdom provides some of the most scenic drives you will ever
+          experience. Arrange a car rental in the UK with Auto Europe and make
+          your way from one historic landmark to the next. Drive your UK rental
+          car to England and get your fix of stylish city life in London, then
+          break west to bask in the sunshine of beautiful St. Ives. Travel to
+          Scotland and get lost in the myth and wonder that encompasses this
+          unique country, as sparkling lochs litter the sprawling landscapes and
+          ancient fortresses and stoic towers break into the sky. Explore the
+          rugged coastline in Wales and meander through beautiful villages of
+          ancient legends and traditional lifestyle.
+        </p>
+
+        <p>
+          With a car rental in the UK you're free to explore all the top travel
+          destinations. Book a one-way car rental with Auto Europe and see more
+          on your trip to the UK. Don't forget about our discounts on UK travel
+          packages, UK car rental insurance or deals on GPS rentals to help you
+          save even more on your rental. With Auto Europe's price match
+          guarantee there is no reason to wait, book your rental car in the UK
+          today!
+        </p>
+      </div>
+    </section>
+
+    <!-- About Us end-->
+
+    <!--Our Cars Start-->
+    <section class="p-5 text-center ekibimiz" id="cars">
+      <div class="container">
+        <h2 class="font-weight-bold">Cheap car rentals in Turkey</h2>
+        <hr class="ayrac" />
+        <i class="fa-solid fa-leaf beyaz"></i>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 card shadow crewCard">
+              <img src="img/a7.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title"><b>Ford Focus 1.6</b></h5>
+                <p class="card-text">136PS | Black</p>
+                <p><b>$17/day</b></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 card shadow crewCard">
+              <img src="img/a1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title"><b>Renault Captur</b></h5>
+                <p class="card-text">110 PS | Gray</p>
+              </div>
+
+              <p><b>$18/day</b></p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 card shadow crewCard">
+              <img src="img/a2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title"><b>Renault Clio</b></h5>
+                <p class="card-text">90 PS | Black</p>
+                <p><b>$17/day</b></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 card shadow crewCard">
+              <img src="img/a3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Nissan Micra</h5>
+                <p class="card-text">65 PS | Orange</p>
+                <p><b>$15/day</b></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 card shadow crewCard">
+              <img src="img/a6.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Volkswagen Golf</h5>
+                <p class="card-text">120 PS | Black</p>
+                <p><b>$19/day</b></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 card shadow crewCard">
+              <img src="img/a5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Volkswagen Passat</h5>
+                <p class="card-text">136 PS | Black</p>
+                <p><b>$20/day</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Our Cars End-->
+
+    <!-- Luxury Car Rentals Start-->
+    <section class="p-5 text-center galery" id="gallery">
+      <div class="container">
+        <h2 class="font-weight-bold">Luxury Car Rental</h2>
+        <hr class="ayrac" />
+        <i class="fa-solid fa-leaf gri"></i>
+
+        <div class="row">
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="img/g1.jpg">
+                <img
+                  src="img/g1.jpg"
+                  class="figure-img img-fluid rounded shadow xv"
+                  alt="..."
+                />
+              </a>
+              <figcaption class="figure-caption">
+                someone who have a shit with perseverance, pierce the wall
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="img/g2.jpg">
+                <img
+                  src="img/g2.jpg"
+                  class="figure-img img-fluid rounded shadow xv"
+                  alt="..."
+                />
+              </a>
+              <figcaption class="figure-caption">
+                someone who have a shit with perseverance, pierce the wall
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="img/g3.jpg">
+                <img
+                  src="img/g3.jpg"
+                  class="figure-img img-fluid rounded shadow xv"
+                  alt="..."
+                />
+              </a>
+              <figcaption class="figure-caption">
+                someone who have a shit with perseverance, pierce the wall
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="img/g4.jpg">
+                <img
+                  src="img/g4.jpg"
+                  class="figure-img img-fluid rounded shadow xv"
+                  alt="..."
+                />
+              </a>
+              <figcaption class="figure-caption">
+                someone who have a shit with perseverance, pierce the wall
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="img/g5.jpg">
+                <img
+                  src="img/g5.jpg"
+                  class="figure-img img-fluid rounded shadow xv"
+                  alt="..."
+                />
+              </a>
+              <figcaption class="figure-caption">
+                someone who have a shit with perseverance, pierce the wall
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="img/g6.jpg">
+                <img
+                  src="img/g6.jpg"
+                  class="figure-img img-fluid rounded shadow xv"
+                  alt="..."
+                />
+              </a>
+              <figcaption class="figure-caption">
+                someone who have a shit with perseverance, pierce the wall
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="img/g7.jpg">
+                <img
+                  src="img/g7.jpg"
+                  class="figure-img img-fluid rounded shadow xv"
+                  alt="..."
+                />
+              </a>
+              <figcaption class="figure-caption">
+                someone who have a shit with perseverance, pierce the wall
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="img/g8.jpg">
+                <img
+                  src="img/g8.jpg"
+                  class="figure-img img-fluid rounded shadow xv"
+                  alt="..."
+                />
+              </a>
+              <figcaption class="figure-caption">
+                someone who have a shit with perseverance, pierce the wall
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Luxury Car Rentals End-->
+
+    <!--Commucation Start-->
+
+    <section id="connectus" class="p-5 text-center text-dark">
+      <div class="container">
+        <h2 class="font-weight-bold">Contact Us</h2>
+        <hr class="ayrac" />
+        <i class="fa-solid fa-leaf beyaz"></i>
+        <div class="row g-3">
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="First name"
+              aria-label="First name"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last name"
+              aria-label="Last name"
+            />
+          </div>
+        </div>
+        <div class="my-3">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Text Us"
+          ></textarea>
+        </div>
+        <form class="row gy-2 align-items-left">
+          <div class=""></div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--Commucation End-->
+
+    <!-- Footer Start-->
+    <div class="text-center bg-dark text-light" id="contactus">
+      <p class="align-middle p-5 mb-0 footer">
+        <span> All Rights Reserved &copy; | 2022</span><br />
+        <span>Design By <b>Crazy Engineer-CE</b></span>
+      </p>
+    </div>
+
+    <!-- Footer End-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
